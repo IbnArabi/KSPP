@@ -32,36 +32,62 @@
             z-index: 1;
         }
 
-        .news-title .news-content{
-            font-family: 'Roboto Condensed', sans-serif;
-        }
-
-        .news-content{
-            background-color: whitesmoke;
-
-        }
-
-        .latest-news{
+        .news{
+            background-color: #c73c3c;
+            width:auto;
+            height: auto;
             padding: 10px;
+            display: inline-block;
+        }
+
+        .title{
+            font-size: 25px;
+        }
+
+        .news-box{
+            background-color: whitesmoke;
+            width: 125px;
+            padding: 5px;
+            height: auto;
+            display: inline-block;
+        }
+
+        .infobtn{
+            background-color: #b55b2d;
+            color: white;
+            font-size: 19px;
+            border: none;
+            padding: 4px;
+            cursor: pointer;
         }
     </style>
 </head>
 <body>
     <div class="mainArea">
         <h2 class="mainTitle">Welcome Captain, <span id="name"></span></h2>
+        <br><br>
         <div class="sidenav-area">
             <div class="sidenav">
                 <a href="pilot-home">Home</a>
                 <a href="new-bid">New Bid</a>
-                <a href="bids">Bid Flights</a>
+                <a href="view-bid">Bid Flights</a>
               </div>              
         </div>
-        <div class="latest-news">
-            <div class="news-content">
-                <h2 class="news-title">New Bids</h2>
-                <button onclick="newbid()" class="btn">Read</button>
+        <div class="news">
+            <div class="news-box">
+                <span class="title">New Bids</span>
+                <button class="infobtn" onclick="newbid()">Read More</button>
+            </div>
+            <div class="news-box">
+                <span class="title">Landing...</span>
+                <button class="infobtn" onclick="lonwz()">Read More</button>
+            </div>
+            <div class="news-box">
+                <span class="title">Support</span>
+                <button class="infobtn" onclick="sup()">Read More</button>
             </div>
         </div>
+
     </div>
     <script src="index.js"></script>
     <script src="script.js"></script>
