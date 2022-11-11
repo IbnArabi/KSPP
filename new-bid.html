@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="script.css">
+    <style>
+        input{
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            border-radius: 4px;
+        }
+        #pass-login{
+            float: center;
+        }
+
+        .infobutton{
+            display: inline;
+        }
+
+        .addbid{
+            width: auto;
+        }
+    </style>
+    <title>New Bid</title>
+</head>
+<body class="bid-body">
+    <div class="bid-form">
+        <select id="airline">
+            <option value="0">Select Airline</option>
+            <option value="Saudia" >Saudia</option>
+            <option value="Gulfair">Gulf Air</option>
+            <option value="Emirates" >Emirates</option>
+            <option value="Qatar" >Qatar</option>
+            <option value="Etihad" >Etihad</option>
+            <option value="Flynas" >FlyNas</option>
+            <option value="Flyadeal" >Flyadeal</option>            
+            <option value="Air Arabia" >Air Arabia</option>
+            <option value="Pia" >PIA</option>
+            <option value="Airblue" >Air Blue</option>
+            <option value="Serne Air" >Serene Air</option>
+            <option value="Oman Air" >Oman Air</option>
+            <OPTION value="Air Sial">Air Sial</OPTION>
+        </select>
+        <br>
+        <input type="number" placeholder="Flight No" required id="flightno"><br>
+        <input type="time" placeholder="Departure (Zulu)" required id="deptime"><br>
+        <input type="text" placeholder="Route" required id="route"><br>
+        <input type="text" placeholder="Aircraft" required id="aircraft"><br>
+        <input type="type" placeholder="Registration" required id="reg" value="N930NN"><br>
+        <input type="text" placeholder="Estimated Flight Time" id="eft"><br>
+        <input type="text" placeholder="Dep ICAO" required id="depicao" minlength="4" maxlength="4"><br>
+        <input type="text" placeholder="Arr ICAO" required id="arricao" minlength="4" maxlength="4"><br>
+        <input type="submit" value="Add Bid" id="addbid" class="btn btn-primary infobutton addbid" onclick="add_bid()">
+        <a href="view-bid.html" class="btn btn-primary infobutton">View Bids</a>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
