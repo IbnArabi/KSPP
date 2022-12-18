@@ -10,7 +10,9 @@ function add_bid(){
     var dep = document.getElementById("depicao").value;
     var arr = document.getElementById("arricao").value;
     var randomId = Math.floor(Math.random() * 1000000000); 
-    var eft = document.getElementById("eft").value
+    var eft = document.getElementById("eft").value;
+    var date = document.getElementById("date").value;
+
 
     var bid = {
         airline: airline,
@@ -23,7 +25,8 @@ function add_bid(){
         dep: dep,
         arr: arr,
         eft: eft,
-        id: randomId
+        id: randomId,
+        date: date
     };
 
     alert("Bid added successfully!");

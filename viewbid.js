@@ -4,8 +4,9 @@ var allBids = JSON.parse(localStorage.getItem('bids')) || [];
 document.getElementById("bid-container").innerHTML = allBids.map((bid, index) => {
     return `
         <div class="bid">
-            <div class="flight-info"><span class="flight-no flight time">${bid.flight}</span></div>
+            <div class="flight-info">${bid.airline}: <span class="flight-no flight time">${bid.flight}</span></div>
             <div class="bid-amount"><span class="title ">Departure: </span><span class="time">${bid.amount}</span></div>
+            <div class="date"><span class="date">Departure Date: <span class="time">${bid.date}</span></div>
             <button class="btn btn-primary hahah" id="${bid.id}">Full Info</button>
         </div>
     `;
@@ -43,3 +44,9 @@ function veiwFullBid(e) {
     var bidId = e;
     console.log(bidId);
 }
+
+/**
+ * Add remaning time to departure
+ * Add flight status in future
+ * Add delay status in future
+ */
