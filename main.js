@@ -10,7 +10,7 @@ function add_bid(){
     var dep = document.getElementById("depicao").value;
     var arr = document.getElementById("arricao").value;
     var randomId = Math.floor(Math.random() * 1000000000); 
-    var etf = document.getElementById("eft").value
+    var eft = document.getElementById("eft").value
 
     var bid = {
         airline: airline,
@@ -22,7 +22,7 @@ function add_bid(){
         reg: reg,
         dep: dep,
         arr: arr,
-        etf: etf,
+        eft: eft,
         id: randomId
     };
 
