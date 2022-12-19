@@ -1,3 +1,4 @@
+Add date input in new-bid form
 Add remaning time to departure
  * Add flight status
  * Add delay status
