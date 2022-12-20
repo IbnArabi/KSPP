@@ -5,11 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="script.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" type="text/css">
     <link rel="icon" href="logo.png" type="image/x-icon">
     <title>Dashboard | KSPP Pilot Department</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@700&display=swap" rel="stylesheet">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@700&display=swap');
 
         * {
             margin: 0;
@@ -53,6 +56,29 @@
             width: auto;
             height: auto;
         }
+
+        .event-img{
+            width: 125px;
+            height: 175px;
+        }
+
+        .event-box{
+            border: 3px solid black;
+            width: 145px;
+            height: auto;
+            padding: 3px;
+            display: inline-block;
+        }
+
+        .events-area{
+            display: inline-block;
+            background-color: antiquewhite;
+        }
+
+        .subtitle-event{
+            font-family: 'Unbounded', cursive;
+            font-size: 25px;
+        }
     </style>
 </head>
 <body>
@@ -65,10 +91,40 @@
                 <a href="bids">Bid Flights</a>
               </div>              
         </div>
-        <div class="sponsor-area">
-            <div class="sponsor-imgs">
-                <img src="/sponsor-images/qatar.png">
-                        
+
+        <br><br>
+
+        <div class="events-area">
+            <h2 class="title">Events</h2>
+            <div class="event-box">
+                <img src="sponsor-images/qatar.png" class="event-img">
+                <div class="event-dis">
+                    <h2 class="subtitle-event">FIFA World Cup</h2>
+                </div>
+            </div>
+            <div class="event-box">
+                <img src="sponsor-images/makmed.jpg" class="event-img">
+                <div class="event-dis">
+                    <h2 class="subtitle-event">Umrah Season</h2>
+                </div>
+            </div>
+            <div class="event-box">
+                <img src="sponsor-images/visit-saudi.png" class="event-img">
+                <div class="event-dis">
+                    <h2 class="subtitle-event">Visit Saudia</h2>
+                </div>
+            </div>
+            <div class="event-box">
+                <img src="sponsor-images/visit-maldives.jpg" class="event-img">
+                <div class="event-dis">
+                    <h2 class="subtitle-event">Visit Maldives</h2>
+                </div>
+            </div>
+            <div class="event-box">
+                <img src="sponsor-images/bali.jpg" class="event-img">
+                <div class="event-dis">
+                    <h2 class="subtitle-event">Fly to Bali</h2>
+                </div>
             </div>
         </div>
     </div>
