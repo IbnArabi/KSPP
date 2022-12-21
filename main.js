@@ -12,6 +12,7 @@ function add_bid(){
     var randomId = Math.floor(Math.random() * 1000000000); 
     var eft = document.getElementById("eft").value;
     var date = document.getElementById("date").value;
+    var alt = document.getElementById("alt").vlaue;
 
 
     var bid = {
@@ -26,7 +27,8 @@ function add_bid(){
         arr: arr,
         eft: eft,
         id: randomId,
-        date: date
+        date: date,
+        alt: alt
     };
 
     alert("Bid added successfully!");

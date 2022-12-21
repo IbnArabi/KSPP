@@ -30,6 +30,7 @@ buttons.forEach(function(button) {
                 <div class="bid-amount"><span class="title ">Aircraft: </span><span class="time">${bid.aircraft}</span></div>
                 <div class="bid-amount"><span class="title ">Registration: </span><span class="time">${bid.reg}</span></div>
                 <div class="bid-amount"><span class="title">Estimated Flight Time: </span><span class="time">${bid.eft}</span></div>
+                <div class="bid-amount"><span class="title">Est. Altitude</span><sapan class="time">${bid.alt}</span></div
                 <div class="bid-amount"><span class="title ">Departure ICAO: </span><span class="time">${bid.dep}</span></div>
                 <div class="bid-amount"><span class="title ">Arrival ICAO: </span><span class="time">${bid.arr}</span></div>
             </div>

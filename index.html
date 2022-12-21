@@ -24,16 +24,6 @@
             background-color: #f5f5f5;
         }
 
-        .navbar {
-            width: 100%;
-            height: 60px;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            position: fixed;
-            top: 0;
-            left: 0;
-            z-index: 1;
-        }
 
         .news-title .news-content{
             font-family: 'Roboto Condensed', sans-serif;
@@ -48,9 +38,6 @@
             padding: 10px;
         }
 
-        .sponsor-imgs{
-            background-color: antiquewhite;
-        }
 
         .logoimg{
             width: auto;
@@ -72,7 +59,6 @@
 
         .events-area{
             display: inline-block;
-            background-color: antiquewhite;
         }
 
         .subtitle-event{
@@ -88,71 +74,131 @@
         .airline-box{
             width: auto;
         }
+
+        .stats-box{
+            background-color: #498feb;
+            color: white;
+            display: inline-block;
+            padding: 13px;
+            border-radius: 5px;
+            margin-left: 1rem;
+        }
+
+
     </style>
 </head>
 <body>
     <div class="mainArea">
-        <h2 class="mainTitle">Welcome Captain, <span id="name"></span></h2>
-        <div class="sidenav-area">
-            <div class="sidenav">
-                <a href="pilot-home">Home</a>
-                <a href="new-bid">New Bid</a>
-                <a href="bids">Bid Flights</a>
-              </div>              
-        </div>
+        <ul>
+            <li class="active"><a href="pilot-home">Home</a></li>
+            <li><a href="bids">Bid Flights</a></li>
+            <li><a href="new-bid">New Bid</a></li>
+          </ul>
+
+        <br><br><br>
+
+        <center>
+            <div class="stats">
+                <div class="stats-box">
+                    <h1 class="stats-number" id="totalFlight">2000+</h1>
+                    <h4 class="stats-subtitle">Total Bids</h4>
+            </div>
+            <div class="stats-box">
+                <h1 class="stats-number" id="totalFlight">32500+</h1>
+                <h4 class="stats-subtitle">Total Passengers Carried</h4>
+            </div>
+            <div class="stats-box">
+                <h1 class="stats-number" id="totalFlight">$10 000 000+</h1>
+                <h4 class="stats-subtitle">Total Revenue</h4>
+            </div>
+            <div class="stats-box">
+                <h1 class="stats-number" id="totalFlight">95%</h1>
+                <h4 class="stats-subtitle">Positive Feedback</h4>
+            </div>
+            <div class="stats-box">
+                <h1 class="stats-number" id="totalFlight">100+</h1>
+                <h4 class="stats-subtitle">Destinations Worldwide</h4>
+            </div>
+            <div class="stats-box">
+                <h1 class="stats-number" id="totalFlight">50+</h1>
+                <h4 class="stats-subtitle">Aircraft Fleet</h4>
+            </div>
+    
 
         <br><br>
+            <div class="events-area">
+                <h2 class="title">Events</h2>
+                <div class="event-box">
+                    <img src="sponsor-images/qatar.png" class="event-img">
+                    <div class="event-dis">
+                        <h2 class="subtitle-event">FIFA Cup</h2>
+                    </div>
+                </div>
+                <div class="event-box">
+                    <img src="sponsor-images/makmed.jpg" class="event-img">
+                    <div class="event-dis">
+                        <h2 class="subtitle-event">Umrah Season</h2>
+                    </div>
+                </div>
+                <div class="event-box">
+                    <img src="sponsor-images/visit-saudi.png" class="event-img">
+                    <div class="event-dis">
+                        <h2 class="subtitle-event">Visit Saudia</h2>
+                    </div>
+                </div>
+                <div class="event-box">
+                    <img src="sponsor-images/visit-maldives.jpg" class="event-img">
+                    <div class="event-dis">
+                        <h2 class="subtitle-event">Visit Maldives</h2>
+                    </div>
+                </div>
+                <div class="event-box">
+                    <img src="sponsor-images/bali.jpg" class="event-img">
+                    <div class="event-dis">
+                        <h2 class="subtitle-event">Fly to Bali</h2>
+                    </div>
+                </div>
+            </div>
 
-        <div class="events-area">
-            <h2 class="title">Events</h2>
-            <div class="event-box">
-                <img src="sponsor-images/qatar.png" class="event-img">
-                <div class="event-dis">
-                    <h2 class="subtitle-event">FIFA World Cup</h2>
+            <br><br><br><br><br><Br>
+            <div class="top-airlines">
+                <div class="subtitle-event">
+                    <h2>Top Airlines</h2>
+                </div>
+                <div class="event-box airline-box">
+                    <img src="airline-logos/qatar.png" alt="qatar airways" class="logo-airline">
+                </div>
+                <div class="event-box airline-box">
+                    <img src="airline-logos/sinagapore.png" alt="sinagapore airways" class="logo-airline">
+                </div>
+                <div class="event-box airline-box">
+                    <img src="airline-logos/emirates.jpg" alt="emirates" class="logo-airline">
+                </div>
+                <div class="event-box airline-box">
+                    <img src="airline-logos/ana-logo.png" alt="ANA" class="logo-airline">
                 </div>
             </div>
-            <div class="event-box">
-                <img src="sponsor-images/makmed.jpg" class="event-img">
-                <div class="event-dis">
-                    <h2 class="subtitle-event">Umrah Season</h2>
-                </div>
-            </div>
-            <div class="event-box">
-                <img src="sponsor-images/visit-saudi.png" class="event-img">
-                <div class="event-dis">
-                    <h2 class="subtitle-event">Visit Saudia</h2>
-                </div>
-            </div>
-            <div class="event-box">
-                <img src="sponsor-images/visit-maldives.jpg" class="event-img">
-                <div class="event-dis">
-                    <h2 class="subtitle-event">Visit Maldives</h2>
-                </div>
-            </div>
-            <div class="event-box">
-                <img src="sponsor-images/bali.jpg" class="event-img">
-                <div class="event-dis">
-                    <h2 class="subtitle-event">Fly to Bali</h2>
-                </div>
-            </div>
-        </div>
 
-        <br><br>
-
-        <div class="top-airlines">
+            <br><br><br><br><br>
+            
             <div class="subtitle-event">
-                <h2>Top Airlines</h2>
+                <h2>Important News</h2>
             </div>
-            <div class="event-box airline-box">
-                <img src="airline-logos/qatar.png" alt="qatar airways" class="logo-airline">
+            <div class="news" id="news">
+                <div class="news-box">
+                    <span class="title">New Bids</span>
+                    <button class="infobtn" onclick="newbid()">Read More</button>
+                </div>
+                <div class="news-box">
+                    <span class="title">Landing...</span>
+                    <button class="infobtn" onclick="lonwz()">Read More</button>
+                </div>
+                <div class="news-box">
+                    <span class="title">Support...</span>
+                    <button class="infobtn" onclick="sup()">Read More</button>
+                </div>
             </div>
-            <div class="event-box airline-box">
-                <img src="airline-logos/sinagapore.png" alt="sinagapore airways" class="logo-airline">
-            </div>
-            <div class="event-box airline-box">
-                <img src="airline-logos/emirates.jpg" alt="emirates" class="logo-airline">
-            </div>
-        </div>
+        </center>
     </div>
     <script src="index.js"></script>
     <script src="script.js"></script>
