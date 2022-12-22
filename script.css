@@ -24,7 +24,7 @@
     font-size: 20px;
     padding: 15px;
     width: auto;
-    background-color: #19257d;
+    background-color: #646464;
   }
 
   ul {
@@ -56,4 +56,36 @@
   
   .active {
     background-color: #04AA6D;
+  }
+
+  .block{
+    display: inline-block;
+  }
+
+  #flightno{
+    width: 115px;
+  }
+
+  .icao{
+    width: 115px;
+  }
+
+  #alt{
+    width: 150px;
+  }
+
+  input{
+    border-radius: 5px;
+  }
+
+  #aircraft{
+    width: 450px;
+  }
+
+  #reg{
+    width: 450px;
+  }
+
+  #route{
+    width: 725px;
   }

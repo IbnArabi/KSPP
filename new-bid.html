@@ -48,19 +48,72 @@
             <option value="Oman Air" >Oman Air</option>
             <OPTION value="Air Sial">Air Sial</OPTION>
         </select>
-        <br>
-        <input type="number" placeholder="Flight No" required id="flightno"><br>
-        <input type="date" required id="date"><br>
-        <input type="time" placeholder="Departure (Zulu)" required id="deptime"><br>
-        <input type="text" placeholder="Route" required id="route"><br>
-        <input type="text" placeholder="Aircraft" required id="aircraft"><br>
-        <input type="type" placeholder="Registration" required id="reg" value="N930NN"><br>
-        <input type="text" placeholder="Estimated Flight Time (Minutes)" id="eft"><br>
-        <input type="number" placeholder="Estimated Altitude" id="alt" required><br>
-        <input type="text" placeholder="Dep ICAO" required id="depicao" minlength="4" maxlength="4"><br>
-        <input type="text" placeholder="Arr ICAO" required id="arricao" minlength="4" maxlength="4"><br>
-        <input type="submit" value="Add Bid" id="addbid" class="btn btn-primary infobutton addbid" onclick="add_bid()">
-        <a href="view-bid.html" class="btn btn-primary infobutton">View Bids</a>
+
+       
+
+        <!--New updated Area start-->
+        <div class="important-info">
+            <div class="box">
+                <div class="box-pt2 block">
+                    <label for="flightno">Flight No.</label><br>
+                    <input type="number" placeholder="Num." required id="flightno">
+                </div>
+
+                <div class="box-pt2 block">
+                    <label for="date">Date</label>
+                    <input type="date" id="date" required>
+                </div>
+                <div class="box-pt2 block">
+                    <label for="deptime">Departure</label>
+                    <input type="time" id="deptime" required>
+                </div>
+                <br><br>
+
+                <div class="routeLine">
+                    <label for="route">Route</label><br>
+                    <input type="text" id="route" class="long" placeholder="Route" required>
+                </div>
+
+                <br><br>
+
+                <div class="box-pt2 block">
+                    <label for="aircraft">Aircraft Type</label><Br>
+                    <input type="text" placeholder="Aircraft" required id="aircraft">
+                </div>
+
+                <br><br>
+
+                <div class="box-pt2 block>
+                    <label for="reg">Registration</label><Br>
+                <input type="type" placeholder="Registration" required id="reg" value="N930NN">
+                </div>
+
+                <br>
+
+                <div class="box-pt2 block">
+                    <label for="eft">Flight Time</label>
+                    <input type="text" placeholder="Estimated Flight Time (Minutes)" id="eft">
+                </div>
+
+                <div class="box-pt2 block">
+                    <label for="alt">Altitude</label><br>
+                    <input type="number" placeholder="Alt" id="alt" required>
+                </div>
+
+                <div class="box-pt2 block">
+                    <label for="dep">Departure</label><br>
+                    <input type="text" placeholder="ICAO" required id="depicao" minlength="4" class="icao" maxlength="4">
+                </div>
+
+                <div class="box-pt2 block">
+                    <label for="arricao">Arrival</label><br>
+                    <input type="text" placeholder="ICAO" required id="arricao" class="icao" minlength="4" maxlength="4">
+                </div>
+            </div>
+
+        </div>
+        <a href="view-bid" class="btn btn-primary infobutton">View Bids</a>
+        <button onclick="addbid()" class="btn btn-primary infobutton">Add Bid</button>
     </div>
     <script src="main.js"></script>
 </body>
