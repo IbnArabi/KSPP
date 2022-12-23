@@ -4,9 +4,9 @@ var allBids = JSON.parse(localStorage.getItem('bids')) || [];
 document.getElementById("bid-container").innerHTML = allBids.map((bid, index) => {
     return `
         <div class="bid">
-            <div class="flight-info"><span class="title date">${bid.airline}</span> <span class="flight-no flight time">${bid.flight}</span></div>
-            <div class="bid-amount"><span class="title date">Departure: </span><span class="time">${bid.amount}</span></div>
-            <div class="date"><span class="date title">Departure Date: <span class="flight flight-no time">${bid.date}</span></div>
+            <div class="flight-info"><span class="title date">${bid.airline}</span> <span class="flight-no title flight time">${bid.flight}</span></div>
+            <div class="bid-amount"><span class="title date">Departure: </span><span class="time title">${bid.amount}</span></div>
+            <div class="date"><span class="date title">Departure Date: <span class="flight flight-no title time">${bid.date}</span></div>
             <button class="btn btn-primary hahah" id="${bid.id}">Full Info</button>
         </div>
     `;
